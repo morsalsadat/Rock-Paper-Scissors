@@ -40,7 +40,8 @@ elif user_choice == 2:
   print("You chose scissors")
   print(scissors)
 else:
-  print("Invalid choice. Please try again.")
+  print("Invalid choice.")
+  quit()
 
 computer_choice = random.randint(0, 2)
 
@@ -50,11 +51,9 @@ if computer_choice == 0:
 elif computer_choice == 1:
   print("The computer chose paper")
   print(paper)
-elif computer_choice == 2:
+else:
   print("The computer chose scissors")
   print(scissors)
-else:
-  print("Invalid choice. Please try again.")
 
 if user_choice == 0 and computer_choice == 0:
   print("It's a tie!") 
